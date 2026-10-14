@@ -1,0 +1,21 @@
+/* RC17: restore atmospheric atoms without placing them behind the body canvas. */
+.ai-atoms{z-index:0;pointer-events:none;isolation:isolate}
+body> :not(.ai-atoms):not(script):not(.aurora){position:relative;z-index:1}
+body>.nav{position:sticky;z-index:50}
+body>.modal-backdrop{position:fixed;z-index:100}
+/* Keep decorative atmosphere noninteractive and never above foreground. */
+body>.aurora{pointer-events:none}
+/* Partner deep links: expose the whole selected card below sticky navigation. */
+.partners-page .partner-card[id]{scroll-margin-top:clamp(112px,12vw,158px)}
+/* Partner card rows should size to their content without huge vertical gaps. */
+.partners-page .partner-card{min-width:0;height:auto}
+.partners-page .partner-card p{overflow-wrap:break-word}
+.partners-page .partner-card .partner-name-small{overflow-wrap:anywhere}
+/* Reduce redundant vertical space around the flagship callout and next chapter. */
+.partners-page .section:has(.cc-rc4-feature){padding-top:36px;padding-bottom:36px}
+.partners-page .ecosystem-proof{margin-top:0}
+@media(max-width:780px){
+ .partners-page .partner-card[id]{scroll-margin-top:108px}
+ .partners-page .section:has(.cc-rc4-feature){padding-top:24px;padding-bottom:24px}
+}
+@media(prefers-reduced-motion:reduce){.ai-atom{animation:none!important}}

@@ -1,0 +1,7 @@
+/* RC12: editorial consolidation and comfortable reading rhythm. */
+main p{overflow-wrap:break-word}
+main .page-hero .lead,main .cc-sf-pagehero .lead{max-width:68ch}
+main .cc-next-chapter h2{max-width:26ch}
+main .cc-next-chapter{padding-block:clamp(2.5rem,4.5vw,4rem)}
+main .section h2{line-height:1.2;text-wrap:balance}
+@media(max-width:700px){main .cc-next-chapter{padding-block:2.5rem}}

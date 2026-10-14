@@ -1,0 +1,25 @@
+/* RC10: restrained hierarchy and rhythm adjustments; original visual identity retained. */
+.home-page .cc-sf-flagship{padding-bottom:clamp(28px,3.4vw,54px)!important}
+.home-page .rc8-decision-path{padding-top:clamp(34px,4vw,66px)!important;padding-bottom:clamp(36px,4.4vw,72px)!important}
+.home-page .rc8-decision-path .section-head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);align-items:end;column-gap:clamp(28px,4vw,72px);row-gap:10px;margin-bottom:clamp(22px,2.5vw,36px)}
+.home-page .rc8-decision-path .section-head .eyebrow{grid-column:1/-1}
+.home-page .rc8-decision-path .section-head h2{max-width:24ch;margin:0;font-size:clamp(1.9rem,2.7vw,3.1rem);line-height:1.13;letter-spacing:-.035em}
+.home-page .rc8-decision-path .section-head p{margin:0;max-width:48ch;line-height:1.65}
+.home-page .rc8-path-grid{gap:clamp(12px,1.5vw,22px)}
+.home-page .rc8-path-card{height:100%;display:flex;flex-direction:column;gap:10px;padding:clamp(22px,2vw,34px)}
+.home-page .rc8-path-card h3{line-height:1.25;margin:0}
+.home-page .rc8-path-card p{line-height:1.6;margin:0 0 8px}
+.home-page .rc8-path-link{margin-top:auto}
+.home-page .operating-model-section{padding-top:clamp(36px,4.2vw,72px)!important}
+.home-page .operating-model-section .section-head h2{max-width:22ch;font-size:clamp(1.9rem,2.7vw,3.1rem);line-height:1.16}
+.home-page .framework-strip.six{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-block:24px 28px}
+.home-page .framework-strip.six>div{text-align:center;padding:13px 8px;border:1px solid rgba(112,212,236,.28);background:rgba(11,41,62,.78);border-radius:12px;font-weight:650}
+.rc10-journey{padding-block:clamp(36px,5vw,76px)}
+.rc10-journey-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.9fr);gap:clamp(22px,4vw,70px);align-items:center;padding:clamp(22px,3.5vw,48px);border:1px solid rgba(111,212,238,.28);background:linear-gradient(120deg,rgba(11,41,63,.95),rgba(7,23,40,.96));border-radius:20px}
+.rc10-journey h2{margin:10px 0;font-size:clamp(1.5rem,2.4vw,2.4rem)}
+.rc10-journey p{max-width:54ch;line-height:1.6}
+.rc10-journey-links{display:grid;gap:12px}
+.rc10-journey-links a{display:block;color:#9ce8f6;padding:13px 16px;border:1px solid rgba(111,212,238,.25);border-radius:10px;text-decoration:none}
+.rc10-journey-links a:hover,.rc10-journey-links a:focus-visible{border-color:#9ce8f6;background:rgba(111,212,238,.08)}
+@media(max-width:800px){.home-page .rc8-decision-path .section-head,.rc10-journey-inner{grid-template-columns:1fr}.home-page .framework-strip.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:480px){.home-page .framework-strip.six{grid-template-columns:repeat(2,minmax(0,1fr))}}

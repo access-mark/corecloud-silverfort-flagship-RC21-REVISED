@@ -1,0 +1,9 @@
+/* RC15: Editorial content is not an interactive card. Preserve all functional cards. */
+.matrix.cc-editorial-matrix{background:transparent;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;padding:0 0 0 0}
+.matrix.cc-editorial-matrix .flow-row{padding:17px 0;border-bottom:1px solid rgba(195,220,240,.16)}
+.matrix.cc-editorial-matrix .flow-row:last-child{border-bottom:0}
+.split>.glass.cc-editorial-prose{background:transparent;border:0;box-shadow:none;backdrop-filter:none;border-radius:0;padding:0}
+.split>.glass.cc-editorial-prose:before{display:none}
+.split>.glass.cc-editorial-prose p{font-size:15px;line-height:1.78;color:#c7d4df}
+.split>.glass.cc-editorial-prose p:first-child{margin-top:0}
+@media(max-width:720px){.matrix.cc-editorial-matrix .flow-row{padding:14px 0}.split>.glass.cc-editorial-prose{padding:0}}

@@ -1,0 +1,66 @@
+/* CoreCloud RC7 consolidated navigation: original responsive rules + final overrides. */
+/* RC2 additive responsive and navigation layer. Original styles.css unchanged. */
+@media(min-width:1500px){:root{--max: min(86vw, 1840px)}.nav-inner{gap:clamp(20px,2vw,42px)}.hero-grid{gap:clamp(48px,4vw,100px)}.orchestration-board{max-width:720px}.cc-sf-panel{gap:clamp(24px,3vw,60px)}}
+@media(min-width:2400px){:root{--max:min(82vw,2200px)}.hero-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}.orchestration-board{max-width:850px}.partner-strip.text-partners{gap:20px}}
+.cc-rc2-nav .cc-rc2-links{gap:clamp(11px,1.15vw,24px);font-size:clamp(12px,.76vw,14px)}
+.cc-rc2-links>a:not(.btn),.cc-rc2-dropbtn{white-space:nowrap}
+.cc-rc2-dropdown{position:relative;display:flex;align-items:center}
+.cc-rc2-dropbtn{font:inherit;color:inherit;opacity:.78;background:transparent;border:0;cursor:pointer;padding:12px 0}
+.cc-rc2-dropbtn:hover,.cc-rc2-dropbtn[aria-expanded=true]{opacity:1;color:#8fe4ff}
+.cc-rc2-menu{display:none;position:absolute;top:100%;left:-18px;min-width:220px;padding:12px;background:#0b2036;border:1px solid rgba(164,224,255,.26);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.45);z-index:100}
+.cc-rc2-dropdown:hover .cc-rc2-menu,.cc-rc2-dropdown:focus-within .cc-rc2-menu,.cc-rc2-dropdown.open .cc-rc2-menu{display:grid;gap:3px}
+.cc-rc2-menu a{display:block;padding:10px 12px;border-radius:8px;white-space:nowrap}.cc-rc2-menu a:hover{background:rgba(34,200,255,.12)}
+
+.cc-rc2-nav .links a[aria-current=page]{opacity:1;color:#8fe4ff}
+.cc-rc2-nav .mobile-panel{max-height:calc(100vh - 88px);overflow-y:auto}
+.cc-sf-pagehero{min-height:0!important;display:block!important;padding:clamp(36px,5vh,70px) 0 clamp(30px,4vh,54px)!important}
+.cc-sf-pagehero .container{padding-top:0!important;padding-bottom:0!important}
+.cc-sf-pagehero h1{margin-top:14px}
+@media(max-width:1250px){.cc-rc2-nav .links{display:none}.cc-rc2-nav .mobile-toggle{display:inline-flex}}
+@media(max-width:720px){.cc-sf-pagehero{padding:32px 0 28px!important}.cc-rc2-identity:after{display:none}}
+
+.cc-rc4-process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cc-rc4-process .glass{height:100%}
+.cc-rc4-process .glass .kicker{color:#8fe4ff}
+.orchestrator-page .grid.cols-3>.glass,.orchestrator-page .grid.cols-3>a.glass{min-width:0}
+.cc-rc4-feature{border:1px solid rgba(72,210,246,.28);background:linear-gradient(125deg,rgba(30,115,160,.17),rgba(7,22,39,.55))}
+.cc-rc4-feature h3{margin-top:8px}
+.cc-rc4-feature .micro-list{margin-top:18px}
+@media(min-width:1650px){.orchestrator-page .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.orchestrator-page .grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1100px){.cc-rc4-process{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.cc-rc4-process{grid-template-columns:1fr}.cc-rc2-nav .cc-rc2-identity::after{display:none!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+@media(min-width:1100px){.orchestrator-page .cc-rc4-matrix{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.orchestrator-page .cc-rc4-matrix .flow-row{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:22px;border:1px solid rgba(115,200,244,.22);border-radius:14px;background:rgba(10,35,57,.65)}.orchestrator-page .cc-rc4-matrix .flow-row:last-child{grid-column:span 3;align-items:center;text-align:center}}
+
+/* RC6: single authoritative navigation design; original CoreCloud aesthetic */
+.cc-rc2-nav{background:rgba(6,17,31,.95)!important;border-bottom:1px solid rgba(117,179,206,.14)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.cc-rc2-nav .nav-inner{min-height:80px;gap:22px}
+.cc-rc2-nav .brand{flex-shrink:0}
+.cc-rc2-nav .cc-rc2-links{gap:clamp(10px,1.25vw,23px);align-items:center}
+.cc-rc2-nav .cc-rc2-links>a:not(.btn),.cc-rc2-nav .cc-rc2-dropbtn{font-size:13px!important;letter-spacing:.015em!important;font-weight:540!important;color:#d9e7f0!important;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:10px 0!important;position:relative!important;text-decoration:none!important;white-space:nowrap;transition:color .18s ease!important}
+.cc-rc2-nav .cc-rc2-links>a:not(.btn):hover,.cc-rc2-nav .cc-rc2-dropbtn:hover{color:#7ed9f1!important}
+.cc-rc2-nav .cc-rc2-links>a:not(.btn)::before,.cc-rc2-nav .cc-rc2-links>a:not(.btn)::after,.cc-rc2-nav .cc-rc2-dropbtn::before,.cc-rc2-nav .cc-rc2-dropbtn::after{content:none!important;display:none!important}
+.cc-rc2-nav .cc-rc2-links>a[aria-current=page]:not(.btn),.cc-rc2-nav .cc-rc2-dropbtn[aria-current=page]{color:#fff!important;font-weight:700!important}
+.cc-rc2-nav .cc-rc2-links>a[aria-current=page]:not(.btn){text-decoration:underline!important;text-decoration-color:#54c9e9!important;text-underline-offset:8px!important;text-decoration-thickness:1px!important}
+.cc-rc2-nav .cc-rc2-identity{color:#83dcef!important;font-weight:640!important}
+.cc-rc2-nav .cc-rc2-identity[aria-current=page]{color:#fff!important}
+.cc-rc2-nav .cc-rc2-menu{background:#0b2035!important;border:1px solid rgba(109,190,222,.23)!important;border-radius:12px!important;box-shadow:0 20px 48px rgba(0,0,0,.36)!important;padding:9px!important;min-width:205px}
+.cc-rc2-nav .cc-rc2-menu a{border-radius:7px!important;padding:11px 13px!important;font-size:13px!important}
+.cc-rc2-nav .cc-rc2-menu a:hover,.cc-rc2-nav .cc-rc2-menu a[aria-current=page]{background:rgba(86,195,225,.12)!important;color:#c7f4ff!important}
+.cc-rc2-nav .cc-rc2-links>.btn.gold{padding:10px 15px!important;font-size:12px!important;white-space:nowrap}
+.cc-rc2-nav .cc-rc2-links a:focus-visible,.cc-rc2-nav button:focus-visible,.cc-rc2-nav .mobile-panel a:focus-visible{outline:2px solid #81dff6!important;outline-offset:4px}
+@media(max-width:1280px){.cc-rc2-nav .cc-rc2-links{gap:10px}.cc-rc2-nav .cc-rc2-links>a:not(.btn),.cc-rc2-nav .cc-rc2-dropbtn{font-size:12px!important}}
+@media(max-width:1100px){.cc-rc2-nav .cc-rc2-links{display:none!important}.cc-rc2-nav .mobile-toggle{display:inline-flex!important}}
+@media(prefers-reduced-motion:reduce){.cc-rc2-nav *{transition:none!important;animation:none!important}}
+
+/* RC7 polished navigation state. Keep flagship distinct from current-page state. */
+.cc-rc2-nav .cc-rc2-links>a[aria-current="page"]:not(.btn){text-decoration:none!important;color:#f4fcff!important}
+.cc-rc2-nav .cc-rc2-links>a[aria-current="page"]:not(.btn)::after{content:""!important;display:block!important;position:absolute;bottom:3px;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#70dff2 20%,#9de8ff 80%,transparent);border-radius:8px;box-shadow:0 0 11px rgba(80,201,235,.34)}
+.cc-rc2-nav .cc-rc2-identity{color:#b2e9f4!important}
+.cc-rc2-nav .cc-rc2-menu a[aria-current="page"]{box-shadow:inset 2px 0 0 #75dcf2!important}
+.cc-rc2-nav .cc-rc2-dropbtn[aria-current="page"]{color:#f1faff!important}
+.cc-rc2-nav .cc-rc2-links>a:not(.btn),.cc-rc2-nav .cc-rc2-dropbtn{transition:color .2s ease!important}
+.cc-rc2-nav .cc-rc2-menu{backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+@media(max-width:1100px){.cc-rc2-nav .mobile-panel{max-height:calc(100dvh - 80px);overflow-y:auto;overscroll-behavior:contain}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}

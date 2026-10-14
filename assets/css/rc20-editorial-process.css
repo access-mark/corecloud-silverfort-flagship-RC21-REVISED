@@ -1,0 +1,31 @@
+/* RC20: a compact, open editorial treatment of the four-step Silverfort engagement. */
+.cc-sf-detail .cc-rc3-process {
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:clamp(22px,3vw,46px)!important;
+  align-items:start;
+  margin-top:clamp(20px,3vw,38px);
+}
+.cc-sf-detail .cc-rc3-process > .glass {
+  height:auto!important;
+  min-height:0!important;
+  padding:0 0 0 19px!important;
+  margin:0!important;
+  border:0!important;
+  border-left:2px solid rgba(91,202,234,.35)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+}
+.cc-sf-detail .cc-rc3-process > .glass::before,
+.cc-sf-detail .cc-rc3-process > .glass::after { display:none!important; }
+.cc-sf-detail .cc-rc3-process .kicker {margin:0 0 7px!important;font-weight:550!important;letter-spacing:.08em;}
+.cc-sf-detail .cc-rc3-process h3 {margin:0 0 7px!important;font-size:clamp(1.03rem,1.25vw,1.22rem);font-weight:490!important;line-height:1.35;}
+.cc-sf-detail .cc-rc3-process p {margin:0!important;max-width:55ch;line-height:1.65;}
+@media(max-width:700px){
+ .cc-sf-detail .cc-rc3-process {grid-template-columns:1fr!important;gap:25px!important;}
+}
+/* Protect navigation over all page artwork; no changes to the menu's existing interaction. */
+body > .nav.cc-rc2-nav,body > nav.nav.cc-rc2-nav {z-index:1000!important;}
+.cc-rc2-nav .cc-rc2-menu {z-index:1002!important;}

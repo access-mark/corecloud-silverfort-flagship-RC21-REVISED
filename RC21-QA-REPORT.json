@@ -1,0 +1,26 @@
+{
+  "html_pages": 44,
+  "files": 84,
+  "missing_local_links_or_assets": [],
+  "broken_fragment_links": [],
+  "missing_page_titles": [],
+  "external_form_endpoints": [
+    [
+      "contact.html",
+      "https://formsubmit.co/sales@corecloudza.com"
+    ],
+    [
+      "guides.html",
+      "https://formsubmit.co/sales@corecloudza.com"
+    ],
+    [
+      "request-nda.html",
+      "https://formsubmit.co/sales@corecloudza.com"
+    ]
+  ],
+  "silverfort_questions": 20,
+  "js_syntax": "PASS",
+  "visual_browser_test": "NOT RUN",
+  "live_email_delivery": "NOT TESTED",
+  "production_redirects": "NOT VERIFIED"
+}

@@ -1,0 +1,18 @@
+/* RC19: protect menu stacking and calm editorial typography. */
+/* The RC17 general body-child rule assigned z-index:1 to every direct child,
+   including the navigation. Override that stacking context explicitly. */
+body > nav.nav.cc-rc2-nav, body > .nav.cc-rc2-nav { position:sticky!important; top:0; z-index:1000!important; isolation:isolate; }
+.cc-rc2-nav .cc-rc2-dropdown { position:relative; z-index:1001; }
+.cc-rc2-nav .cc-rc2-menu { z-index:1002!important; }
+body > .modal-backdrop { z-index:1100!important; }
+/* Scale and whitespace establish hierarchy; preserve the Inter typeface. */
+:root { --cc-editorial-display-weight:480; --cc-editorial-heading-weight:490; --cc-editorial-subheading-weight:510; }
+main h1,main .hero h1,main .page-hero h1 { letter-spacing:-.038em; }
+main h2,main .section h2,main .cc-sf-main h2 { letter-spacing:-.027em; }
+main .cc-editorial-outcome p { font-weight:400; }
+main .cc-om-title,main .cc-om-foundation-title,main .cc-om-outcomes-title { font-weight:530; }
+main .cc-om-num { font-weight:570; }
+main .cc-om-foundation-grid span { font-weight:500; }
+main .glass .kicker,main .eyebrow,main .kicker,main .cc-editorial-outcome-label,main .cc-next-label { font-weight:550; }
+main .flow-row b,main .partner b,main .cap-tile b { font-weight:550; }
+.cc-rc2-nav .cc-rc2-links>a[aria-current=page]:not(.btn),.cc-rc2-nav .cc-rc2-dropbtn[aria-current=page] {font-weight:560!important;}

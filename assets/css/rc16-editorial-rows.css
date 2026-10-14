@@ -1,0 +1,7 @@
+/* RC16: Reference information reads as editorial copy, not as a table. */
+.matrix.cc-editorial-matrix{background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;padding:0;max-width:980px}
+.matrix.cc-editorial-matrix .flow-row,
+.matrix.cc-editorial-matrix .flow-row:last-child{border:0;border-bottom:0;box-shadow:none;background:none;padding:12px 0;gap:24px;align-items:start}
+.matrix.cc-editorial-matrix .flow-row b{font-weight:700;line-height:1.55}
+.matrix.cc-editorial-matrix .flow-row span{line-height:1.7}
+@media(max-width:720px){.matrix.cc-editorial-matrix .flow-row{padding:13px 0;gap:4px}}

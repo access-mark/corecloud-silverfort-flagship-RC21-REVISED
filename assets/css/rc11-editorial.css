@@ -1,0 +1,16 @@
+/* RC11: readable editorial rhythm, without changing CoreCloud brand */
+.page-hero .container>h1,.cc-sf-pagehero h1{max-width:900px;letter-spacing:-.035em;line-height:1.09;text-wrap:balance}
+.page-hero .lead,.cc-sf-pagehero .lead{max-width:740px;line-height:1.65;text-wrap:pretty}
+.cc-editorial-outcome{max-width:740px;margin:1.35rem 0 1.5rem;padding:.85rem 1.1rem;border-left:2px solid #b99a5a;background:rgba(255,255,255,.035);border-radius:0 10px 10px 0}
+.cc-editorial-outcome-label,.cc-next-label{display:block;color:#c9ab74;text-transform:uppercase;font-size:.71rem;letter-spacing:.13em;font-weight:700;margin:0 0 .4rem}
+.cc-editorial-outcome p{margin:0;line-height:1.5;font-size:clamp(.98rem,1.25vw,1.12rem);font-weight:550}
+.cc-next-chapter{padding:clamp(3rem,6vw,5rem) 0;border-top:1px solid rgba(255,255,255,.11);background:linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
+.cc-next-chapter .container{max-width:1040px}
+.cc-next-chapter h2{max-width:820px;font-size:clamp(1.6rem,3vw,2.65rem);letter-spacing:-.025em;line-height:1.2;text-wrap:balance;margin:.4rem 0 1.2rem}
+.cc-next-link{display:inline-flex;align-items:center;gap:.5rem;color:#d4b97c;font-weight:650;text-decoration:none;border-bottom:1px solid rgba(212,185,124,.45);padding-bottom:.35rem}
+.cc-next-link:hover,.cc-next-link:focus-visible{color:#fff;border-color:#fff}
+/* Reduce heavy gaps between homepage chapters and keep cards visually grouped. */
+body:has(.orchestration-board) main>.section{padding-top:clamp(2.5rem,5vw,4.75rem);padding-bottom:clamp(2.5rem,5vw,4.75rem)}
+.section-head{gap:1.25rem}.section-head h2{text-wrap:balance;letter-spacing:-.025em}
+@media(max-width:700px){.cc-editorial-outcome{margin:1.15rem 0}.cc-next-chapter{padding:3rem 0}.cc-next-chapter h2{font-size:1.7rem}}
+@media(prefers-reduced-motion:reduce){.cc-next-link{scroll-behavior:auto}}

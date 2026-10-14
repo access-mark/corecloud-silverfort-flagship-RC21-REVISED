@@ -1,0 +1,11 @@
+/* RC8: focused homepage decision pathways; scoped to new component */
+.rc8-decision-path{position:relative}
+.rc8-path-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,24px);margin-top:clamp(22px,3vw,40px)}
+.rc8-path-card{display:flex;flex-direction:column;gap:12px;min-width:0;padding:clamp(22px,2.5vw,34px);border:1px solid rgba(94,201,224,.26);border-radius:20px;background:linear-gradient(145deg,rgba(17,48,70,.75),rgba(6,22,39,.92));color:inherit;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.rc8-path-card:hover,.rc8-path-card:focus-visible{transform:translateY(-3px);border-color:rgba(90,218,239,.8);box-shadow:0 14px 40px rgba(0,0,0,.2);outline-offset:3px}
+.rc8-path-index{color:#7cdaed;font-size:.74rem;font-weight:750;letter-spacing:.12em}
+.rc8-path-card h3{font-size:clamp(1.15rem,1.65vw,1.5rem);line-height:1.25;margin:0}
+.rc8-path-card p{margin:0;line-height:1.65;flex:1}
+.rc8-path-link{color:#7cdaed;font-weight:700;margin-top:8px}
+@media(max-width:800px){.rc8-path-grid{grid-template-columns:1fr}.rc8-path-card{padding:22px}}
+@media(prefers-reduced-motion:reduce){.rc8-path-card{transition:none}.rc8-path-card:hover{transform:none}}

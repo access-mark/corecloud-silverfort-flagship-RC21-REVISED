@@ -1,0 +1,21 @@
+/* RC18: restrained editorial typography. Existing typeface and content preserved. */
+:root { --cc-editorial-display-weight: 550; --cc-editorial-heading-weight: 560; --cc-editorial-subheading-weight: 570; }
+/* Hierarchy comes from scale, rhythm and contrast rather than excessive boldness. */
+main h1, main .hero h1, main .page-hero h1 { font-weight:var(--cc-editorial-display-weight); letter-spacing:-.045em; line-height:1.12; text-wrap:balance; }
+main h2, main .section h2, main .cc-sf-main h2, main .rc9-close-panel h2 { font-weight:var(--cc-editorial-heading-weight); letter-spacing:-.035em; line-height:1.18; text-wrap:balance; }
+main h3, main .glass h3, main .cap-tile strong { font-weight:var(--cc-editorial-subheading-weight); letter-spacing:-.018em; line-height:1.28; }
+/* Lead copy should not compete with the headline. */
+main p.lead, main .lead, main .section-head p { font-weight:400; line-height:1.7; }
+main .cc-editorial-outcome p { font-weight:450; line-height:1.55; }
+main .cc-editorial-outcome-label, main .cc-next-label { font-weight:600; }
+main .cc-om-title { font-weight:600; letter-spacing:.055em; }
+main .cc-om-num { font-weight:650; }
+main .cc-om-foundation-title, main .cc-om-outcomes-title { font-weight:600; }
+main .cc-om-foundation-grid span { font-weight:550; }
+main .glass .kicker, main .eyebrow, main .kicker { font-weight:600; }
+main .flow-row b, main .partner b, main .cap-tile b { font-weight:600; }
+/* Avoid global strong/b resets: preserve emphasis, forms, logos and functional UI. */
+@media (max-width:760px) {
+  main h1, main .hero h1, main .page-hero h1 { line-height:1.14; letter-spacing:-.035em; }
+  main h2, main .section h2 { line-height:1.22; }
+}
